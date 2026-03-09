@@ -5,192 +5,81 @@
 <meta charset="UTF-8">
 <title>DevSecOps Architect Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Results-driven DevSecOps Architect with 7+ years of experience designing and leading enterprise cloud security and CI/CD modernization initiatives across AWS and Azure environments. Proven ability to align security engineering with business strategy, reduce enterprise risk exposure, and embed automated security controls across large-scale cloud ecosystems.">
 
 <style>
-
-html{
-scroll-behavior:smooth;
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0f1a;
+  color: #e6edf3;
 }
-
-body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:#0b0f1a;
-color:#e6edf3;
+header { text-align: center; padding: 70px 20px; background: linear-gradient(135deg,#0b0f1a,#121a2b); }
+h1 { font-size: 42px; margin-bottom: 10px; }
+.subtitle { color: #7aa2ff; }
+nav {
+  background: #111;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-
-header{
-text-align:center;
-padding:70px 20px;
-background:linear-gradient(135deg,#0b0f1a,#121a2b);
+nav a { color: white; text-decoration: none; font-weight: bold; }
+section { padding: 60px 10%; }
+.terminal {
+  background: black;
+  color: #00ff9c;
+  padding: 20px;
+  font-family: monospace;
+  border-radius: 8px;
+  height: 180px;
+  overflow: hidden;
 }
-
-h1{
-font-size:42px;
-margin-bottom:10px;
+.pipeline { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.stage {
+  background: #1d263b;
+  padding: 20px;
+  border-radius: 8px;
+  width: 140px;
+  text-align: center;
+  animation: pulse 2s infinite;
 }
-
-.subtitle{
-color:#7aa2ff;
+@keyframes pulse { 0% { transform: scale(1) } 50% { transform: scale(1.08) } 100% { transform: scale(1) } }
+.skills { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 20px; }
+.skill { background: #151d30; padding: 15px; border-radius: 6px; text-align: center; cursor: pointer; }
+.cloud3d { height: 260px; display: flex; justify-content: center; align-items: center; perspective: 900px; }
+.cube { width: 120px; height: 120px; background: #1f2a44; transform: rotateX(45deg) rotateY(45deg); animation: spin 8s linear infinite; }
+@keyframes spin { 0% { transform: rotateX(45deg) rotateY(0) } 100% { transform: rotateX(45deg) rotateY(360deg) } }
+.tools { display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: 20px; }
+.tool { background: #151d30; padding: 15px; border-radius: 6px; text-align: center; }
+.github-projects { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 20px; }
+.repo { background: #151d30; padding: 20px; border-radius: 8px; }
+.attack-map-container {
+  margin-top: 20px;
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(122,162,255,0.2);
+  box-shadow: 0 0 25px rgba(0,255,150,0.15);
 }
-
-nav{
-background:#111;
-padding:15px;
-display:flex;
-justify-content:center;
-gap:30px;
-position:sticky;
-top:0;
-z-index:100;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-section{
-padding:60px 10%;
-}
-
-.terminal{
-background:black;
-color:#00ff9c;
-padding:20px;
-font-family:monospace;
-border-radius:8px;
-height:180px;
-overflow:hidden;
-}
-
-.pipeline{
-display:flex;
-flex-wrap:wrap;
-gap:20px;
-justify-content:center;
-}
-
-.stage{
-background:#1d263b;
-padding:20px;
-border-radius:8px;
-width:130px;
-text-align:center;
-animation:pulse 2s infinite;
-}
-
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.08)}
-100%{transform:scale(1)}
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-}
-
-.skill{
-background:#151d30;
-padding:15px;
-border-radius:6px;
-text-align:center;
-}
-
-.cloud3d{
-height:260px;
-display:flex;
-justify-content:center;
-align-items:center;
-perspective:900px;
-}
-
-.cube{
-width:120px;
-height:120px;
-background:#1f2a44;
-transform:rotateX(45deg) rotateY(45deg);
-animation:spin 8s linear infinite;
-}
-
-@keyframes spin{
-0%{transform:rotateX(45deg) rotateY(0)}
-100%{transform:rotateX(45deg) rotateY(360deg)}
-}
-
-.tools{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-gap:20px;
-}
-
-.tool{
-background:#151d30;
-padding:15px;
-border-radius:6px;
-text-align:center;
-}
-
-.github-projects{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.repo{
-background:#151d30;
-padding:20px;
-border-radius:8px;
-}
-
-.attack-map-container{
-margin-top:20px;
-background:black;
-border-radius:12px;
-overflow:hidden;
-border:1px solid rgba(122,162,255,0.2);
-box-shadow:0 0 25px rgba(0,255,150,0.15);
-}
-
-button{
-background:#7aa2ff;
-padding:12px 20px;
-border:none;
-border-radius:6px;
-font-weight:bold;
-cursor:pointer;
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#111;
-}
-
-@media(max-width:700px){
-section{padding:40px 5%}
-}
-
+button { background: #7aa2ff; padding: 12px 20px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; }
+footer { text-align: center; padding: 40px; background: #111; }
+@media(max-width:700px){ section { padding: 40px 5% } }
 </style>
 </head>
 
 <body>
 
 <header>
-
 <h1>DevSecOps Architect</h1>
-
-<p class="subtitle">
-Cloud Security • DevSecOps • Zero Trust Architecture
-</p>
-
+<p class="subtitle">Cloud Security • DevSecOps • Zero Trust Architecture</p>
 </header>
 
 <nav>
-
 <a href="#terminal">Terminal</a>
 <a href="#pipeline">Pipeline</a>
 <a href="#skills">Skills</a>
@@ -198,41 +87,34 @@ Cloud Security • DevSecOps • Zero Trust Architecture
 <a href="#attack">Threat Map</a>
 <a href="#tools">Tools</a>
 <a href="#github">Projects</a>
+<a href="#maturity">Maturity</a>
+<a href="#zerotrust">Zero Trust</a>
+<a href="#resume">Resume</a>
 <a href="#contact">Contact</a>
-
 </nav>
 
 <section id="terminal">
-
 <h2>DevSecOps Live Terminal</h2>
-
 <div class="terminal" id="terminalText"></div>
-
 </section>
 
 <section id="pipeline">
-
 <h2>DevSecOps CI/CD Pipeline</h2>
-
 <div class="pipeline">
-
 <div class="stage">Code</div>
 <div class="stage">SAST</div>
+<div class="stage">DAST</div>
+<div class="stage">Artifact Signing</div>
 <div class="stage">Build</div>
 <div class="stage">Container Scan</div>
 <div class="stage">Deploy</div>
 <div class="stage">Runtime Security</div>
-
 </div>
-
 </section>
 
 <section id="skills">
-
 <h2>Security Architecture Domains</h2>
-
 <div class="skills">
-
 <div class="skill">Application Security</div>
 <div class="skill">Cloud Security</div>
 <div class="skill">Infrastructure Security</div>
@@ -247,49 +129,27 @@ Cloud Security • DevSecOps • Zero Trust Architecture
 <div class="skill">Supply Chain Security</div>
 <div class="skill">Cryptography</div>
 <div class="skill">Incident Response</div>
-
 </div>
-
 </section>
 
 <section id="cloud">
-
 <h2>3D Cloud Infrastructure</h2>
-
 <div class="cloud3d">
 <div class="cube"></div>
 </div>
-
 </section>
 
 <section id="attack">
-
 <h2>Live Global Cyber Attack Map</h2>
-
-<p style="color:#7aa2ff">
-Real-time cyber threat intelligence powered by Check Point ThreatCloud
-</p>
-
+<p style="color:#7aa2ff">Real-time cyber threat intelligence powered by Check Point ThreatCloud</p>
 <div class="attack-map-container">
-
-<iframe
-src="https://threatmap.checkpoint.com/"
-width="100%"
-height="650"
-frameborder="0"
-loading="lazy">
-</iframe>
-
+<iframe src="https://threatmap.checkpoint.com/" width="100%" height="650" frameborder="0" loading="lazy"></iframe>
 </div>
-
 </section>
 
 <section id="tools">
-
 <h2>Security Tools Dashboard</h2>
-
 <div class="tools">
-
 <div class="tool">SonarQube</div>
 <div class="tool">Snyk</div>
 <div class="tool">Checkmarx</div>
@@ -300,119 +160,120 @@ loading="lazy">
 <div class="tool">Trivy</div>
 <div class="tool">Falco</div>
 <div class="tool">HashiCorp Vault</div>
-
 </div>
-
 </section>
 
 <section id="github">
-
 <h2>GitHub Projects</h2>
-
 <div id="repos" class="github-projects"></div>
+</section>
 
+<section id="maturity">
+<h2>DevSecOps Maturity Radar Chart</h2>
+<canvas id="radarChart" width="400" height="400"></canvas>
+</section>
+
+<section id="zerotrust">
+<h2>Interactive Zero Trust Architecture</h2>
+<p style="color:#7aa2ff">Hover over each zone for key Zero Trust principles</p>
+<div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+<div class="skill" title="Identity: RBAC, MFA, SSO">Identity</div>
+<div class="skill" title="Device: Endpoint security, EDR, Patch Management">Device</div>
+<div class="skill" title="Network: Microsegmentation, TLS, Firewalls">Network</div>
+<div class="skill" title="Application: Secure coding, SAST/DAST, Container Security">Application</div>
+<div class="skill" title="Data: Encryption, DLP, Backup protection">Data</div>
+</div>
 </section>
 
 <section id="resume">
-
 <h2>Resume</h2>
-
 <button onclick="downloadResume()">Download Resume</button>
-
 </section>
 
 <section id="contact">
-
 <h2>Contact</h2>
-
 <p>📞 443-790-4687</p>
 <p>📧 nmjoe2211@gmail.com</p>
-
-<p>
-<a href="https://github.com/njoe-dev" target="_blank">GitHub</a>
-</p>
-
+<p><a href="https://github.com/njoe-dev" target="_blank">GitHub</a></p>
 </section>
 
 <footer>
-
 <p>DevSecOps Architect Portfolio</p>
-
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-
-const terminalLines=[
-"Initializing DevSecOps environment...",
-"Connecting to cloud infrastructure...",
-"Running SAST security scan...",
-"Running container image scan...",
-"Deploying secure Kubernetes workloads...",
-"Monitoring runtime security events..."
+const terminalLines = [
+  "Initializing DevSecOps environment...",
+  "Connecting to cloud infrastructure...",
+  "Running SAST security scan...",
+  "Running DAST security scan...",
+  "Signing artifacts...",
+  "Building secure containers...",
+  "Deploying workloads...",
+  "Monitoring runtime security events..."
 ];
-
-let i=0;
-
-function typeTerminal(){
-
-if(i<terminalLines.length){
-
-document.getElementById("terminalText").innerHTML+=terminalLines[i]+"<br>";
-
-i++;
-
-setTimeout(typeTerminal,1000);
-
+let i = 0;
+function typeTerminal() {
+  if (i < terminalLines.length) {
+    document.getElementById("terminalText").innerHTML += terminalLines[i] + "<br>";
+    i++;
+    setTimeout(typeTerminal, 1000);
+  }
 }
-
-}
-
 typeTerminal();
 
-async function loadRepos(){
-
-const res=await fetch("https://api.github.com/users/njoe-dev/repos");
-
-const data=await res.json();
-
-let html="";
-
-data.slice(0,6).forEach(repo=>{
-
-html+=`
-
-<div class="repo">
-
-<h3>${repo.name}</h3>
-
-<p>${repo.description || "DevSecOps project"}</p>
-
-<a href="${repo.html_url}" target="_blank">View Repo</a>
-
-</div>
-
-`;
-
-});
-
-document.getElementById("repos").innerHTML=html;
-
+async function loadRepos() {
+  const res = await fetch("https://api.github.com/users/njoe-dev/repos");
+  const data = await res.json();
+  let html = "";
+  data.slice(0, 6).forEach(repo => {
+    html += `<div class="repo">
+      <h3>${repo.name}</h3>
+      <p>${repo.description || "DevSecOps project"}</p>
+      <a href="${repo.html_url}" target="_blank">View Repo</a>
+    </div>`;
+  });
+  document.getElementById("repos").innerHTML = html;
 }
-
 loadRepos();
 
-function downloadResume(){
-
-const link=document.createElement("a");
-
-link.href="resume.pdf";
-
-link.download="DevSecOps_Architect_Resume.pdf";
-
-link.click();
-
+function downloadResume() {
+  const link = document.createElement("a");
+  link.href = "resume.pdf";
+  link.download = "DevSecOps_Architect_Resume.pdf";
+  link.click();
 }
 
+// Radar Chart
+const ctx = document.getElementById('radarChart').getContext('2d');
+const radarChart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: ['AppSec','Cloud','Infra','K8s','IAM','Network','Pipeline','GRC','Data','Endpoint','Threat','Supply','Crypto','Incident'],
+    datasets: [{
+      label: 'Expertise Level',
+      data: [95,90,85,90,88,85,92,80,87,83,82,85,80,85],
+      backgroundColor: 'rgba(122,162,255,0.2)',
+      borderColor: '#7aa2ff',
+      borderWidth: 2,
+      pointBackgroundColor: '#00ff9c'
+    }]
+  },
+  options: {
+    scales: {
+      r: {
+        suggestedMin: 0,
+        suggestedMax: 100,
+        ticks: { color: 'white', stepSize: 20 },
+        grid: { color: 'rgba(122,162,255,0.2)' },
+        angleLines: { color: 'rgba(122,162,255,0.3)' },
+        pointLabels: { color: 'white', font: { size: 14 } }
+      }
+    },
+    plugins: { legend: { labels: { color: 'white' } } }
+  }
+});
 </script>
 
 </body>
